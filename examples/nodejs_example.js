@@ -1,133 +1,93 @@
 /**
- * 蓝鹰AI网关 (BlueEagle AI Gateway) - Node.js 调用示例
- * 官方网站: https://ahg.codes
- * Base URL: https://ahg.codes/v1
- *
+ * 蓝鹰AI网关 - Node.js 调用示例
+ * BlueEagle AI Gateway - Node.js Example
+ * 
+ * 官网: https://ahg.codes
+ * 
  * 安装依赖: npm install openai
  */
 
-import OpenAI from "openai";
+import OpenAI from 'openai';
 
-// ============ 配置 ============
-const API_KEY = "YOUR_API_KEY"; // 替换为您的蓝鹰API Key
-const BASE_URL = "https://ahg.codes/v1";
-
-// ============ 初始化客户端 ============
-const client = new OpenAI({
-  apiKey: API_KEY,
-  baseURL: BASE_URL,
+const openai = new OpenAI({
+  apiKey: 'YOUR_API_KEY',  // 替换为您的API密钥
+  baseURL: 'https://ahg.codes/v1',
 });
 
-// ============ 基础对话 ============
-async function basicChat() {
-  console.log("=".repeat(50));
-  console.log("📝 基础对话示例 - GPT-4o");
-  console.log("=".repeat(50));
-
-  const response = await client.chat.completions.create({
-    model: "gpt-4o",
-    messages: [
-      { role: "system", content: "你是一个专业的AI助手。" },
-      { role: "user", content: "请用3句话介绍蓝鹰AI网关的核心优势。" },
-    ],
-    temperature: 0.7,
+// 示例1: 简单对话
+// Example 1: Simple chat
+async function simpleChat() {
+  const completion = await openai.chat.completions.create({
+    model: 'gpt-4o',
+    messages: [{ role: 'user', content: 'Hello, 介绍一下你自己' }],
   });
-
-  console.log(`模型: ${response.model}`);
-  console.log(`回答: ${response.choices[0].message.content}`);
-  console.log(`Token用量:`, response.usage);
-  console.log();
+  console.log('GPT-4o 回复:', completion.choices[0].message.content);
 }
 
-// ============ Claude 调用 ============
-async function claudeChat() {
-  console.log("=".repeat(50));
-  console.log("📝 Claude 4 Sonnet 对话示例");
-  console.log("=".repeat(50));
-
-  const response = await client.chat.completions.create({
-    model: "claude-4-sonnet",
-    messages: [
-      {
-        role: "user",
-        content: "Explain the concept of AI gateway in simple terms.",
-      },
-    ],
-    temperature: 0.5,
-  });
-
-  console.log(`模型: ${response.model}`);
-  console.log(`回答: ${response.choices[0].message.content}`);
-  console.log();
-}
-
-// ============ 流式输出 ============
+// 示例2: 流式输出
+// Example 2: Streaming
 async function streamingChat() {
-  console.log("=".repeat(50));
-  console.log("🌊 流式输出示例");
-  console.log("=".repeat(50));
-
-  const stream = await client.chat.completions.create({
-    model: "gpt-4o",
-    messages: [{ role: "user", content: "写一首关于蓝鹰的短诗" }],
+  const stream = await openai.chat.completions.create({
+    model: 'gpt-4o-mini',
+    messages: [{ role: 'user', content: '讲一个短故事' }],
     stream: true,
   });
 
+  process.stdout.write('流式输出: ');
   for await (const chunk of stream) {
-    const content = chunk.choices[0]?.delta?.content || "";
-    process.stdout.write(content);
+    process.stdout.write(chunk.choices[0]?.delta?.content || '');
   }
-  console.log("\n");
+  console.log();
 }
 
-// ============ Embedding ============
-async function embeddingExample() {
-  console.log("=".repeat(50));
-  console.log("🔢 Embedding 向量示例");
-  console.log("=".repeat(50));
-
-  const response = await client.embeddings.create({
-    model: "text-embedding-3-large",
-    input: "蓝鹰AI网关提供全球顶尖大模型统一API接入服务",
+// 示例3: Claude 模型调用
+// Example 3: Claude model
+async function claudeChat() {
+  const completion = await openai.chat.completions.create({
+    model: 'claude-3-5-sonnet-20241022',
+    messages: [{ role: 'user', content: '用JavaScript写一个快速排序' }],
   });
-
-  console.log(`向量维度: ${response.data[0].embedding.length}`);
-  console.log(`前5个分量: ${response.data[0].embedding.slice(0, 5)}`);
-  console.log();
+  console.log('Claude 回复:', completion.choices[0].message.content);
 }
 
-// ============ 多模型对比 ============
-async function multiModelComparison() {
-  console.log("=".repeat(50));
-  console.log("🔄 多模型对比示例");
-  console.log("=".repeat(50));
-
-  const models = ["gpt-4o", "claude-4-sonnet", "gemini-2.5-pro"];
-  const question = "What is 2+2?";
-
-  for (const model of models) {
-    const response = await client.chat.completions.create({
-      model,
-      messages: [{ role: "user", content: question }],
-      max_tokens: 50,
-    });
-    console.log(`[${model}] ${response.choices[0].message.content.trim()}`);
-  }
-  console.log();
+// 示例4: Gemini 模型调用
+// Example 4: Gemini model
+async function geminiChat() {
+  const completion = await openai.chat.completions.create({
+    model: 'gemini-1.5-pro',
+    messages: [{ role: 'user', content: '解释量子计算的基本原理' }],
+  });
+  console.log('Gemini 回复:', completion.choices[0].message.content);
 }
 
-// ============ 主函数 ============
+// 示例5: 获取模型列表
+// Example 5: List models
+async function listModels() {
+  const models = await openai.models.list();
+  console.log('支持的模型:');
+  models.data.forEach(model => {
+    console.log(`  - ${model.id}`);
+  });
+}
+
+// 主函数
 async function main() {
-  console.log("🦅 蓝鹰AI网关 - Node.js 调用示例集");
-  console.log(`🌐 官网: https://ahg.codes`);
-  console.log(`📡 Base URL: ${BASE_URL}`);
-  console.log();
+  console.log('='.repeat(50));
+  console.log('蓝鹰AI网关 - Node.js 调用示例');
+  console.log('BlueEagle AI Gateway - Node.js Examples');
+  console.log('='.repeat(50));
 
-  await basicChat();
-  // await claudeChat();
+  // 请取消注释要运行的示例
+  // Uncomment the example you want to run
+
+  // await simpleChat();
   // await streamingChat();
-  // await embeddingExample();
-  // await multiModelComparison();
+  // await claudeChat();
+  // await geminiChat();
+  // await listModels();
+
+  console.log('\n请先在代码中设置您的 API Key，然后取消注释要运行的示例函数');
+  console.log('Please set your API Key in the code and uncomment the example function to run');
 }
 
 main().catch(console.error);

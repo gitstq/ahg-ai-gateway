@@ -1,143 +1,73 @@
 """
-蓝鹰AI网关 (BlueEagle AI Gateway) - Python 调用示例
-官方网站: https://ahg.codes
-Base URL: https://ahg.codes/v1
+蓝鹰AI网关 - Python 调用示例
+BlueEagle AI Gateway - Python Example
 
-安装依赖: pip install openai
+官网: https://ahg.codes
 """
 
 from openai import OpenAI
 
-# ============ 配置 ============
-API_KEY = "YOUR_API_KEY"  # 替换为您的蓝鹰API Key
-BASE_URL = "https://ahg.codes/v1"
+# 初始化客户端
+# Initialize client
+client = OpenAI(
+    api_key="YOUR_API_KEY",  # 替换为您的API密钥
+    base_url="https://ahg.codes/v1"
+)
 
-# ============ 初始化客户端 ============
-client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
-
-
-def example_basic_chat():
-    """基础对话示例"""
-    print("=" * 50)
-    print("📝 基础对话示例 - GPT-4o")
-    print("=" * 50)
-
+# 示例1: 简单对话
+# Example 1: Simple chat
+def simple_chat():
     response = client.chat.completions.create(
         model="gpt-4o",
-        messages=[
-            {"role": "system", "content": "你是一个专业的AI助手。"},
-            {"role": "user", "content": "请用3句话介绍蓝鹰AI网关的核心优势。"},
-        ],
-        temperature=0.7,
+        messages=[{"role": "user", "content": "Hello, 介绍一下你自己"}]
     )
+    print("GPT-4o 回复:", response.choices[0].message.content)
 
-    print(f"模型: {response.model}")
-    print(f"回答: {response.choices[0].message.content}")
-    print(f"Token用量: {response.usage}")
-    print()
-
-
-def example_claude():
-    """Claude模型调用示例"""
-    print("=" * 50)
-    print("📝 Claude 4 Sonnet 对话示例")
-    print("=" * 50)
-
+# 示例2: 流式输出
+# Example 2: Streaming
+def streaming_chat():
     response = client.chat.completions.create(
-        model="claude-4-sonnet",
-        messages=[
-            {"role": "user", "content": "Explain the concept of AI gateway in simple terms."},
-        ],
-        temperature=0.5,
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": "讲一个短故事"}],
+        stream=True
     )
-
-    print(f"模型: {response.model}")
-    print(f"回答: {response.choices[0].message.content}")
+    print("流式输出: ", end="")
+    for chunk in response:
+        if chunk.choices[0].delta.content:
+            print(chunk.choices[0].delta.content, end="")
     print()
 
-
-def example_gemini():
-    """Gemini模型调用示例"""
-    print("=" * 50)
-    print("📝 Gemini 2.5 Pro 对话示例")
-    print("=" * 50)
-
+# 示例3: Claude 模型调用
+# Example 3: Claude model
+def claude_chat():
     response = client.chat.completions.create(
-        model="gemini-2.5-pro",
-        messages=[
-            {"role": "user", "content": "What are the latest advances in large language models?"},
-        ],
-        temperature=0.7,
+        model="claude-3-5-sonnet-20241022",
+        messages=[{"role": "user", "content": "用Python写一个快速排序"}]
     )
+    print("Claude 回复:", response.choices[0].message.content)
 
-    print(f"模型: {response.model}")
-    print(f"回答: {response.choices[0].message.content}")
-    print()
-
-
-def example_streaming():
-    """流式输出示例"""
-    print("=" * 50)
-    print("🌊 流式输出示例")
-    print("=" * 50)
-
-    stream = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[{"role": "user", "content": "写一首关于蓝鹰的短诗"}],
-        stream=True,
+# 示例4: Gemini 模型调用
+# Example 4: Gemini model
+def gemini_chat():
+    response = client.chat.completions.create(
+        model="gemini-1.5-pro",
+        messages=[{"role": "user", "content": "解释量子计算的基本原理"}]
     )
-
-    for chunk in stream:
-        if chunk.choices[0].delta.content is not None:
-            print(chunk.choices[0].delta.content, end="", flush=True)
-    print("\n")
-
-
-def example_embedding():
-    """Embedding示例"""
-    print("=" * 50)
-    print("🔢 Embedding 向量示例")
-    print("=" * 50)
-
-    response = client.embeddings.create(
-        model="text-embedding-3-large",
-        input="蓝鹰AI网关提供全球顶尖大模型统一API接入服务",
-    )
-
-    print(f"向量维度: {len(response.data[0].embedding)}")
-    print(f"前5个分量: {response.data[0].embedding[:5]}")
-    print()
-
-
-def example_multi_model():
-    """多模型对比示例"""
-    print("=" * 50)
-    print("🔄 多模型对比示例")
-    print("=" * 50)
-
-    models = ["gpt-4o", "claude-4-sonnet", "gemini-2.5-pro"]
-    question = "What is 2+2?"
-
-    for model in models:
-        response = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": question}],
-            max_tokens=50,
-        )
-        print(f"[{model}] {response.choices[0].message.content.strip()}")
-    print()
-
+    print("Gemini 回复:", response.choices[0].message.content)
 
 if __name__ == "__main__":
-    print("🦅 蓝鹰AI网关 - Python 调用示例集")
-    print(f"🌐 官网: https://ahg.codes")
-    print(f"📡 Base URL: {BASE_URL}")
-    print()
-
-    # 取消注释以运行各示例
-    example_basic_chat()
-    # example_claude()
-    # example_gemini()
-    # example_streaming()
-    # example_embedding()
-    # example_multi_model()
+    print("=" * 50)
+    print("蓝鹰AI网关 - Python 调用示例")
+    print("BlueEagle AI Gateway - Python Examples")
+    print("=" * 50)
+    
+    # 请取消注释要运行的示例
+    # Uncomment the example you want to run
+    
+    # simple_chat()
+    # streaming_chat()
+    # claude_chat()
+    # gemini_chat()
+    
+    print("\n请先在代码中设置您的 API Key，然后取消注释要运行的示例函数")
+    print("Please set your API Key in the code and uncomment the example function to run")
