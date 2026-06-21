@@ -1,91 +1,90 @@
 <div align="center">
 
-![BlueEagle AI Gateway](https://img.shields.io/badge/BlueEagle-AI%20Gateway-00D4FF?style=for-the-badge&logo=artificial-intelligence&logoColor=white)
-
-[![Stars](https://img.shields.io/github/stars/blueeagle-ai/gateway?style=flat-square&logo=github&color=gold)](https://github.com/blueeagle-ai/gateway)
-[![Price](https://img.shields.io/badge/%E6%B6%88%E8%80%97%E5%80%8D%E7%8E%87-0.09x-success?style=flat-square)](https://ahg.codes)
-[![Ratio](https://img.shields.io/badge/%E5%85%85%E5%80%BC%E6%AF%94%E4%BE%8B-1:1-blue?style=flat-square)](https://ahg.codes)
-[![Official](https://img.shields.io/badge/100%25%E5%8E%9F%E7%94%9F%E5%AE%98%E6%96%B9%E5%8F%B7%E6%B1%A0-FF6B6B?style=flat-square)](https://ahg.codes)
-[![Compatible](https://img.shields.io/badge/OpenAI%20Compatible-100%25-412991?style=flat-square&logo=openai)](https://ahg.codes)
+[![Stars](https://img.shields.io/github/stars/blueeagle-ai/BlueEagle-AI-Gateway?style=social)](https://github.com/blueeagle-ai/BlueEagle-AI-Gateway)
+[![Price](https://img.shields.io/badge/price-0.09x-blue?style=flat-square&logo=money)](https://ahg.codes)
+[![Recharge](https://img.shields.io/badge/recharge-1:1-green?style=flat-square&logo=cashapp)](https://ahg.codes)
+[![Native](https://img.shields.io/badge/native-official%20pool-orange?style=flat-square&logo=shield)](https://ahg.codes)
+[![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-412991?style=flat-square&logo=openai)](https://ahg.codes)
 
 # 🦅 蓝鹰AI网关 | BlueEagle AI Gateway
 
 ### **全球顶尖大模型统一API网关 · 一站式接入所有主流AI模型**
 
-**Universal API Gateway for Top-Tier AI Models · One-Stop Access to All Leading LLMs**
+**One API to Rule Them All — 一个API，统御所有大模型**
 
-[🌐 官方网站](https://ahg.codes) · [💰 立即充值](https://ahg.codes) · [📖 API文档](https://ahg.codes) · [💬 技术支持](https://ahg.codes)
+[🌐 官方网站](https://ahg.codes) · [💰 立即充值](https://ahg.codes) · [🚀 免费测试](https://ahg.codes)
 
 </div>
 
 ---
 
-## 🎯 项目简介 | Introduction
+## 📖 简介 | Introduction
 
-**蓝鹰AI网关**是全球领先的AI大模型统一接入平台，为开发者和企业提供**极致性价比**的AI API服务。
+**蓝鹰AI网关（BlueEagle AI Gateway）** 是全球领先的AI大模型统一API接入平台。我们提供**100%原生官方号池**，支持一键接入 OpenAI、Claude、Gemini 等全球顶尖大模型，**完全兼容OpenAI接口规范**，零代码迁移成本。
 
-- 💎 **消耗倍率仅 0.09x** — 仅为官方定价的 **9%**
-- 💵 **充值比例 1:1** — 充1元人民币 = 1美元官方额度
-- 🔒 **100%原生官方号池** — 无掺假、无共享、无二次中转
-- ⚡ **毫秒级故障切换** — 多账号智能负载均衡
+> 💡 **核心优势**：充值比例 **1:1**（充1元=1美元额度），消耗倍率仅 **0.09x**（官方定价的9%），额度永久有效、不清零。
 
-> **BlueEagle AI Gateway** is a leading unified AI model access platform, providing developers and enterprises with **extreme cost-performance** AI API services at just **9% of official pricing**.
+**BlueEagle AI Gateway** is a world-leading unified API platform for AI large models. We provide **100% native official account pools**, supporting one-click access to top global models like OpenAI, Claude, and Gemini — **fully compatible with OpenAI API specifications** with zero migration cost.
+
+> 💡 **Key Advantage**: Recharge ratio **1:1** (1 CNY = 1 USD credit), consumption rate only **0.09x** (9% of official pricing), credits never expire.
 
 ---
 
-## ✨ 核心优势 | Key Advantages
+## ✨ 核心优势 | Key Features
 
-| 特性 | 说明 | 优势 |
-|------|------|------|
-| 🎯 **0.09x 消耗倍率** | 仅为官方定价的9% | 节省 **91%** 成本 |
-| 💰 **1:1 充值比例** | 1元=1美元官方额度 | 无汇率损失 |
-| 🔐 **原生官方号池** | 100%官方账号，无掺假 | 稳定可靠 |
-| 🎁 **免费测试额度** | 注册即送测试额度 | 零成本体验 |
-| ⚡ **智能负载均衡** | 多账号自动调度 | 高可用性 |
-| 🔄 **毫秒级故障切换** | 自动故障检测与切换 | 99.9% SLA |
-| 📋 **OpenAI兼容** | 完全兼容OpenAI接口规范 | 零代码迁移 |
-| ♾️ **额度永久有效** | 不清零、不过期 | 长期可用 |
+| 特性 | 说明 | Feature | Description |
+|------|------|---------|-------------|
+| 🔥 **极致性价比** | 消耗仅官方9%，1元=1美元额度 | **Ultimate Cost Efficiency** | Only 9% of official pricing, 1 CNY = 1 USD credit |
+| 🛡️ **原生官方号池** | 100%官方账号，无掺假、无共享、无二次中转 | **Native Official Pool** | 100% official accounts, no mixing, no sharing, no secondary relay |
+| ⚡ **智能负载均衡** | 多账号毫秒级自动故障切换 | **Smart Load Balancing** | Multi-account auto failover in milliseconds |
+| 🔄 **OpenAI兼容** | 完全兼容OpenAI接口，零代码迁移 | **OpenAI Compatible** | Fully compatible with OpenAI API, zero code migration |
+| 🎁 **免费测试** | 注册即送测试额度 | **Free Trial** | Free testing credits upon registration |
+| ♾️ **永久有效** | 额度不清零，用多少付多少 | **Never Expires** | Credits never expire, pay-as-you-go |
+
+### 💰 价格对比示例 | Pricing Example
+
+调用 **GPT-4o** 模型，官方价格 $5/1M tokens：
+
+| 平台 | 实际成本（1M tokens）| 节省比例 |
+|------|---------------------|---------|
+| OpenAI 官方 | $5.00 | — |
+| 蓝鹰AI网关 | **$0.45** | **91%** |
+
+> 充值100元 = 获得100美元额度，实际可用价值 = 100 / 0.09 ≈ **1111美元等值调用量**
 
 ---
 
 ## 📋 支持模型 | Supported Models
 
-### 已支持 | Available Now
-
-| 提供商 | 模型系列 | 状态 |
-|--------|----------|------|
-| **OpenAI** | GPT-4o, GPT-4o-mini, GPT-4-Turbo, GPT-3.5-Turbo 全系列 | ✅ 已上线 |
-| **Anthropic** | Claude 3.5 Sonnet, Claude 3 Opus, Claude 3 Sonnet, Claude 3 Haiku 全系列 | ✅ 已上线 |
-| **Google** | Gemini 1.5 Pro, Gemini 1.5 Flash, Gemini Ultra 全系列 | ✅ 已上线 |
-| **Antigravity** | 全系列模型 | ✅ 已上线 |
-
-### 即将支持 | Coming Soon
-
-| 提供商 | 模型系列 | 预计时间 |
-|--------|----------|----------|
-| **DeepSeek** | DeepSeek-V2, DeepSeek-Coder | 🚧 开发中 |
-| **阿里巴巴** | 通义千问 Qwen 全系列 | 🚧 开发中 |
-| **Meta** | Llama 3 全系列 | 🚧 开发中 |
+| 厂商 | 模型系列 | 状态 | Provider | Model Series | Status |
+|------|---------|------|----------|-------------|--------|
+| OpenAI | GPT-4o, GPT-4o-mini, GPT-4-Turbo, GPT-3.5-Turbo | ✅ 已支持 | OpenAI | GPT-4o, GPT-4o-mini, GPT-4-Turbo, GPT-3.5-Turbo | ✅ Supported |
+| Anthropic | Claude 3.5 Sonnet, Claude 3 Opus, Claude 3 Haiku | ✅ 已支持 | Anthropic | Claude 3.5 Sonnet, Claude 3 Opus, Claude 3 Haiku | ✅ Supported |
+| Google | Gemini 1.5 Pro, Gemini 1.5 Flash, Gemini Ultra | ✅ 已支持 | Google | Gemini 1.5 Pro, Gemini 1.5 Flash, Gemini Ultra | ✅ Supported |
+| Antigravity | 全系列 | ✅ 已支持 | Antigravity | Full Series | ✅ Supported |
+| DeepSeek | DeepSeek-V3, DeepSeek-R1 | 🚧 即将支持 | DeepSeek | DeepSeek-V3, DeepSeek-R1 | 🚧 Coming Soon |
+| 通义千问 | Qwen-Max, Qwen-Plus, Qwen-Turbo | 🚧 即将支持 | Qwen | Qwen-Max, Qwen-Plus, Qwen-Turbo | 🚧 Coming Soon |
+| Meta | Llama 3, Llama 3.1 | 🚧 即将支持 | Meta | Llama 3, Llama 3.1 | 🚧 Coming Soon |
 
 ---
 
 ## 🚀 快速开始 | Quick Start
 
-### 1. 获取API密钥
+### 1. 获取API Key
 
-访问 [https://ahg.codes](https://ahg.codes) 注册账号，获取您的 API Key。
+访问 [ahg.codes](https://ahg.codes) 注册账号，在控制台获取您的 API Key。
 
-### 2. 修改 Base URL
+Visit [ahg.codes](https://ahg.codes) to register and get your API Key from the dashboard.
 
-将官方 OpenAI 的 `https://api.openai.com/v1` 替换为：
+### 2. 修改 base_url
 
-```
-https://ahg.codes/v1
-```
+将您的请求地址改为：`https://ahg.codes/v1`
+
+Change your request base URL to: `https://ahg.codes/v1`
 
 ### 3. 开始调用
 
-#### cURL 示例
+#### cURL 示例 | cURL Example
 
 ```bash
 curl https://ahg.codes/v1/chat/completions \
@@ -93,11 +92,14 @@ curl https://ahg.codes/v1/chat/completions \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{
     "model": "gpt-4o",
-    "messages": [{"role": "user", "content": "Hello!"}]
+    "messages": [
+      {"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Hello, BlueEagle!"}
+    ]
   }'
 ```
 
-#### Python 示例
+#### Python 示例 | Python Example
 
 ```python
 from openai import OpenAI
@@ -109,28 +111,34 @@ client = OpenAI(
 
 response = client.chat.completions.create(
     model="gpt-4o",
-    messages=[{"role": "user", "content": "Hello!"}]
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Hello, BlueEagle!"}
+    ]
 )
 
 print(response.choices[0].message.content)
 ```
 
-#### Node.js 示例
+#### Node.js 示例 | Node.js Example
 
 ```javascript
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
+const client = new OpenAI({
   apiKey: 'YOUR_API_KEY',
-  baseUrl: 'https://ahg.codes/v1',
+  baseUrl: 'https://ahg.codes/v1'
 });
 
 async function main() {
-  const completion = await openai.chat.completions.create({
+  const response = await client.chat.completions.create({
     model: 'gpt-4o',
-    messages: [{ role: 'user', content: 'Hello!' }],
+    messages: [
+      { role: 'system', content: 'You are a helpful assistant.' },
+      { role: 'user', content: 'Hello, BlueEagle!' }
+    ]
   });
-  console.log(completion.choices[0].message.content);
+  console.log(response.choices[0].message.content);
 }
 
 main();
@@ -138,68 +146,59 @@ main();
 
 ---
 
-## 💰 充值与计费 | Pricing
+## 💰 充值与计费 | Recharge & Billing
 
-### 计费说明
+### 计费规则
 
-| 项目 | 说明 |
-|------|------|
-| **充值比例** | 1:1（充1元人民币 = 1美元官方额度） |
-| **消耗倍率** | 0.09x（仅为官方定价的9%） |
-| **计费方式** | 按量计费，用多少付多少 |
-| **额度有效期** | 永久有效，不清零、不过期 |
+- **充值比例**：1元人民币 = 1美元官方额度
+- **消耗倍率**：0.09x（仅为官方定价的9%）
+- **计费方式**：按量计费，用多少扣多少
+- **额度有效期**：**永久有效，不清零**
 
-### 成本对比示例
+### 充值示例
 
-假设您调用 GPT-4o，官方定价 $0.005/1K tokens：
+| 充值金额 | 获得额度 | 实际等值调用量 | Recharge Amount | Credits Received | Equivalent Value |
+|---------|---------|--------------|-----------------|------------------|------------------|
+| ¥10 | $10 | ~$111 | ¥10 | $10 | ~$111 |
+| ¥50 | $50 | ~$556 | ¥50 | $50 | ~$556 |
+| ¥100 | $100 | ~$1,111 | ¥100 | $100 | ~$1,111 |
+| ¥500 | $500 | ~$5,556 | ¥500 | $500 | ~$5,556 |
 
-| 平台 | 实际成本（人民币） | 节省比例 |
-|------|-------------------|----------|
-| **官方直购** | 约 ¥0.036/1K tokens | - |
-| **蓝鹰AI网关** | 约 ¥0.0032/1K tokens | **节省 91%** |
-
-> 充值 ¥100 = 获得 $100 官方额度，实际可消费价值约 ¥1111 的API调用！
+> 计算公式：实际等值调用量 = 额度 / 0.09
 
 ---
 
-## ⚔️ 竞品对比 | Comparison
+## ⚔️ 竞品对比 | Competitor Comparison
 
-| 特性 | 蓝鹰AI网关 | 其他中转站A | 其他中转站B | 官方直购 |
-|------|------------|-------------|-------------|----------|
-| **消耗倍率** | **0.09x** | 0.15x-0.3x | 0.2x-0.5x | 1.0x |
-| **充值比例** | **1:1** | 1:0.8 | 1:0.7 | - |
-| **原生号池** | ✅ 100% | ⚠️ 混合 | ❌ 共享号 | ✅ 100% |
-| **免费测试** | ✅ 有 | ❌ 无 | ⚠️ 限量 | ⚠️ 限量 |
-| **故障切换** | ✅ 毫秒级 | ⚠️ 分钟级 | ❌ 无 | ✅ 官方保障 |
-| **额度有效期** | ♾️ **永久** | 1年 | 6个月 | 永久 |
-| **Claude支持** | ✅ 全系列 | ⚠️ 部分 | ❌ 无 | ✅ 全系列 |
-| **Gemini支持** | ✅ 全系列 | ❌ 无 | ❌ 无 | ✅ 全系列 |
-
----
-
-## 🛡️ 稳定性保障 | Reliability
-
-- **多账号智能调度**：自动分配最优账号，避免单点故障
-- **毫秒级故障检测**：实时监控账号健康状态
-- **自动故障切换**：发现问题立即切换，业务无感知
-- **99.9% SLA保障**：专业运维团队7×24小时监控
+| 特性 | 蓝鹰AI网关 | 其他中转站A | 其他中转站B | OpenAI官方 |
+|------|-----------|-----------|-----------|-----------|
+| 消耗倍率 | **0.09x** | 0.15x | 0.2x | 1.0x |
+| 充值比例 | **1:1** | 1:0.8 | 1:0.7 | — |
+| 原生号池 | ✅ 100% | ❌ 共享池 | ❌ 混合池 | ✅ |
+| 额度有效期 | **永久** | 1年 | 6个月 | — |
+| 免费测试 | ✅ | ❌ | ❌ | ✅ |
+| 负载均衡 | ✅ 智能 | ❌ | ❌ | — |
+| 故障切换 | ✅ 毫秒级 | ❌ | ❌ | — |
+| Claude支持 | ✅ | ✅ | ❌ | ❌ |
+| Gemini支持 | ✅ | ❌ | ✅ | ❌ |
 
 ---
 
-## 📞 联系与支持 | Support
+## 📞 联系与支持 | Contact & Support
 
 - 🌐 **官方网站**: [https://ahg.codes](https://ahg.codes)
-- 💬 **在线客服**: 官网右下角在线客服
-- 📧 **商务合作**: 请通过官网联系
+- 💬 **在线客服**: 请访问官网右下角客服窗口
+- 📧 **商务合作**: 请通过官网联系表单提交
+- 🐦 **更新动态**: 关注本仓库获取最新功能更新
 
 ---
 
 ## ⚠️ 免责声明 | Disclaimer
 
-1. 本服务仅供学习和研究使用，请遵守各AI平台的使用条款。
-2. 请勿将本服务用于任何违法违规用途。
-3. API服务的可用性取决于各官方平台的稳定性。
-4. 价格可能根据市场情况调整，请以官网最新信息为准。
+1. 蓝鹰AI网关仅作为AI模型的API接入服务平台，不对模型生成内容负责。
+2. 用户应遵守各AI厂商的使用条款和相关法律法规。
+3. 价格信息可能随市场调整，请以官网实时信息为准。
+4. 本服务仅供合法用途，禁止用于任何违法违规场景。
 
 ---
 
@@ -207,6 +206,6 @@ main();
 
 **Made with ❤️ by BlueEagle Team**
 
-[🌐 立即访问 https://ahg.codes](https://ahg.codes)
+[🌐 ahg.codes](https://ahg.codes) · [⭐ Star this repo](https://github.com/blueeagle-ai/BlueEagle-AI-Gateway)
 
 </div>
